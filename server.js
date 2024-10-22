@@ -9,7 +9,7 @@ const app = express();
 var corsOptions = {
   origin: '*', // Autoriser toutes les origines
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Méthodes autorisées
-  allowedHeaders: ['Content-Type', 'Authorization'], // En-têtes autorisés
+  allowedHeaders: ['Content-Type', 'Authorization', 'x-access-token'], // En-têtes autorisés
 };
 
 app.use(cors(corsOptions));
